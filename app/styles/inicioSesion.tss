@@ -1,0 +1,41 @@
+".container": {
+	backgroundColor:"9C213F",
+	orientationModes: [Ti.UI.PORTRAIT, Ti.UI.LANDSCAPE_LEFT, Ti.UI.LANDSCAPE_RIGHT, Ti.UI.UPSIDE_PORTRAIT]
+},
+"#inicioSesionImg":{
+	top : 365,
+	width:"223px",
+	height :"56px",
+	image :"/inicioSesionIcon.png"
+},
+"#uniclubImg":{
+	top : 110,
+	width : "538px",
+	height : "259px",
+	image :"/uniclubIcon.png"
+}
+".LabelOlvido": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#white",
+	font : "Helvetica",
+	top : "325"
+} 
+".TextoUsuario":{
+	backgroundColor : "white",
+	width : "518px",
+	height : "0.5cm",
+	borderRadius : "3cm",
+	top : "245"
+
+}
+".TextoClave":{
+	backgroundColor : "white",
+	width : "518px",
+	height : "0.5cm",
+	borderRadius : "3cm",	
+	top : "277"
+}
+
+
+
