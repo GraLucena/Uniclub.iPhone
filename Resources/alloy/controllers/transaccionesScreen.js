@@ -178,15 +178,68 @@ function Controller() {
         id: "categoria"
     });
     $.__views.list.add($.__views.categoria);
-    $.__views.__alloyId58 = Ti.UI.createLabel({
-        text: "Mis Transacciones",
-        font: "Helvetica",
-        size: "5pt",
+    $.__views.label = Ti.UI.createLabel({
+        font: {
+            font: "Helvetica",
+            fontSize: "12pt"
+        },
         color: "white",
-        left: "40px",
-        id: "__alloyId58"
+        text: "Mis Transacciones",
+        id: "label",
+        left: "20px"
     });
-    $.__views.categoria.add($.__views.__alloyId58);
+    $.__views.categoria.add($.__views.label);
+    $.__views.label = Ti.UI.createLabel({
+        font: {
+            font: "Helvetica",
+            fontSize: "12pt"
+        },
+        color: "white",
+        text: "Mes",
+        id: "label",
+        right: "170"
+    });
+    $.__views.categoria.add($.__views.label);
+    $.__views.mesImg = Ti.UI.createImageView({
+        image: "/mesBtn.png",
+        id: "mesImg",
+        right: "150"
+    });
+    $.__views.categoria.add($.__views.mesImg);
+    $.__views.label = Ti.UI.createLabel({
+        font: {
+            font: "Helvetica",
+            fontSize: "12pt"
+        },
+        color: "white",
+        text: "Desde",
+        id: "label",
+        right: "110"
+    });
+    $.__views.categoria.add($.__views.label);
+    $.__views.calendarImg = Ti.UI.createImageView({
+        image: "/calendarBtn.png",
+        id: "calendarImg",
+        right: "75"
+    });
+    $.__views.categoria.add($.__views.calendarImg);
+    $.__views.label = Ti.UI.createLabel({
+        font: {
+            font: "Helvetica",
+            fontSize: "12pt"
+        },
+        color: "white",
+        text: "Hasta",
+        id: "label",
+        right: "35"
+    });
+    $.__views.categoria.add($.__views.label);
+    $.__views.calendarImg = Ti.UI.createImageView({
+        image: "/calendarBtn.png",
+        id: "calendarImg",
+        right: "5"
+    });
+    $.__views.categoria.add($.__views.calendarImg);
     $.__views.list = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         selectionStyle: "NONE",
@@ -269,15 +322,15 @@ function Controller() {
         id: "__alloyId56"
     });
     $.__views.inicioScreen.add($.__views.__alloyId56);
-    $.__views.__alloyId59 = Ti.UI.createView({
+    $.__views.__alloyId58 = Ti.UI.createView({
         top: "210",
-        id: "__alloyId59"
+        id: "__alloyId58"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId59);
+    $.__views.inicioScreen.add($.__views.__alloyId58);
     $.__views.myTable = Ti.UI.createTableView({
         id: "myTable"
     });
-    $.__views.__alloyId59.add($.__views.myTable);
+    $.__views.__alloyId58.add($.__views.myTable);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {

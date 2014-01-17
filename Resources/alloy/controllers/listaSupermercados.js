@@ -1,13 +1,6 @@
 function Controller() {
     function infoSupermercado() {
         var win = Alloy.createController("detalleSupermercado").getView();
-        var slide_it_left = Titanium.UI.createAnimation();
-        slide_it_left.left = 0;
-        slide_it_left.duration = 500;
-        var slide_it_right = Titanium.UI.createAnimation();
-        slide_it_right.left = "-90%";
-        slide_it_right.curve = Titanium.UI.ANIMATION_CURVE_EASE_OUT;
-        slide_it_right.duration = 1e3;
         $.inicioScreen.add(win);
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));

@@ -16,7 +16,13 @@
 			
 			<TableViewRow id="list">
     			<View id="categoria">   				
-    				<Label font="Helvetica" size="5pt" color="white" left="40px">Mis Transacciones</Label>   				
+    				<Label id="label" left="20px">Mis Transacciones</Label>
+    				<Label id="label" right="170">Mes</Label>   		
+    				<ImageView id="mesImg" right="150"></ImageView>	   	
+    				<Label id="label" right="110">Desde</Label>   		
+    				<ImageView id="calendarImg" right="75"></ImageView>		
+    				<Label id="label" right="35">Hasta</Label>   	
+    				<ImageView id="calendarImg" right="5"></ImageView>		
     			</View>	
     		</TableViewRow>
     		

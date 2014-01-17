@@ -98,5 +98,18 @@
 	left:"83%",
 	text:"Saldo \nFinal",
 	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
-
+},
+"#calendarImg":{
+	image :"/calendarBtn.png"
+},
+"#mesImg":{
+	image :"/mesBtn.png"
+},
+"#label":{
+	
+	font:{
+		font:"Helvetica",
+		fontSize:"12pt",
+	},
+	color:"white"
 }
