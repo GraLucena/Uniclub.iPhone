@@ -1,20 +1,16 @@
 <Alloy>
-	
-
-
 	<View id='inicioScreen'>						
-			<View id="main">
-				<ImageView id="menuBtn" ></ImageView>
-				<ImageView id="logoImg"></ImageView>
-				<ImageView id="carritoBtn"></ImageView>	
-			</View>
+		<View id="main">
+			<ImageView id="menuBtn" ></ImageView>
+			<ImageView id="logoImg"></ImageView>
+			<ImageView id="carritoBtn"></ImageView>	
+		</View>
 			
-			<TableView class="preciosUnicosList">
+		<TableView class="preciosUnicosList">
 											
 			<TableViewRow id="list">
 				<SearchBar id="search" barColor="#e4e4e4" showCancel="false" width="Ti.UI.FILL" height="43" top="0"  hintText="Palabra Clave" />
 			</TableViewRow>
-			
 			
 			<TableViewRow id="list">
     			<View id="categoria">
@@ -52,7 +48,7 @@
 			</TableViewRow>
 			
 			
-				<TableViewRow id="list">
+			<TableViewRow id="list">
 				<View id="rowContainer2">
 					<ImageView id="productoImg3"></ImageView>
 					<Label id="infoProducto3"></Label>
@@ -65,6 +61,7 @@
 				</View>
 			</TableViewRow>
 						
-		</TableView>			
+		</TableView>
+					
 	</View>
 </Alloy>

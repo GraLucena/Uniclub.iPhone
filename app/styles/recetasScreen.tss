@@ -3,7 +3,6 @@
 	height : '100%',
 	width : '100%'
 },
-
 "#main":{
 	width : Ti.UI.FILL,
 	backgroundColor : "#9C213F",
@@ -30,12 +29,6 @@
 	image :"/unicasaIcon.png"
 },
 ".preciosUnicosList":{
-	width:Ti.UI.FILL,
-	backgroundColor :"#dddddd",
-	top:"131px",
-	separatorColor:"e4e4e4"
-},
-".productosList":{
 	width:Ti.UI.FILL,
 	backgroundColor :"#dddddd",
 	top:"131px",

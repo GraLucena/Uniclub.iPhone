@@ -14,8 +14,8 @@ var tableView = Ti.UI.createTableView({
 	left : 0,
 	top :65,
 	backgroundColor:"#9C213F",
-	//separatorColor : 'white'
 });
+
 v1.add(tableView);
 
 //BORDE
@@ -969,16 +969,14 @@ tableView.addEventListener('click', function(e) {
 		$.drawermenu.showhidemenu();
 		
 	} else if (e.row.children[0].text == 'Catálogo de Productos') {
-			Ti.App.fireEvent('submenuCarniceria');
+		Ti.App.fireEvent('submenuCarniceria');
 			
 			tableView.addEventListener('click', function(e){
 				if (e.row.children[0].text == 'Carnicería') {
 					var catalogoScreen = Alloy.createController('catalogoScreen').getView();
 					$.drawermenu.drawermainview.add(catalogoScreen);
-					
 				}
 			});
-			
 		
 	} else if (e.row.children[0].text == 'Lista de Compras') {
 		var listaDeComprasScreen = Alloy.createController('listaDeComprasScreen').getView();
@@ -1006,15 +1004,15 @@ tableView.addEventListener('click', function(e) {
 	} else if (e.row.children[0].text == 'Mi Cuenta') {
 		Ti.App.fireEvent('submenuMiCuenta');
 		
-		tableView.addEventListener('click', function(e){
-		if (e.row.children[0].text == 'Mis Datos') {
-		var miCuentaScreen = Alloy.createController('miCuentaScreen').getView();
-		$.drawermenu.drawermainview.add(miCuentaScreen);		
-		}else if (e.row.children[0].text == 'Mis Transacciones') {
-		var transaccionesScreen = Alloy.createController('transaccionesScreen').getView();
-		$.drawermenu.drawermainview.add(transaccionesScreen);		
-		}
-	});
+			tableView.addEventListener('click', function(e){
+				if (e.row.children[0].text == 'Mis Datos') {
+					var miCuentaScreen = Alloy.createController('miCuentaScreen').getView();
+					$.drawermenu.drawermainview.add(miCuentaScreen);		
+				}else if (e.row.children[0].text == 'Mis Transacciones') {
+					var transaccionesScreen = Alloy.createController('transaccionesScreen').getView();
+					$.drawermenu.drawermainview.add(transaccionesScreen);		
+				}
+			});
 	
 	} else if (e.row.children[0].text == 'Ubíquenos') {
 		var listaSupermercados = Alloy.createController('listaSupermercados').getView();
@@ -1024,11 +1022,10 @@ tableView.addEventListener('click', function(e) {
 	} else if (e.row.children[0].text == 'Pasillos') {
 		Ti.App.fireEvent('submenuPasillos');
 		
-		tableView.addEventListener('click', function(e){
+			tableView.addEventListener('click', function(e){
 				if (e.row.children[0].text == 'Pasillo 1') {
 					var pasillosScreen = Alloy.createController('pasillosScreen').getView();
 					$.drawermenu.drawermainview.add(pasillosScreen);
-					
 				}
 			});
 		

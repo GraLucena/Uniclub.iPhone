@@ -2,11 +2,11 @@
 	
 	<View id='inicioScreen'>
 								
-			<View id="main">
-				<ImageView id="menuBtn" ></ImageView>
-				<ImageView id="logoImg"></ImageView>
-				<ImageView id="carritoBtn"></ImageView>	
-			</View>
+		<View id="main">
+			<ImageView id="menuBtn" ></ImageView>
+			<ImageView id="logoImg"></ImageView>
+			<ImageView id="carritoBtn"></ImageView>	
+		</View>
 					
 		<TableView class="preciosUnicosList">
 											
@@ -24,7 +24,7 @@
     			</View>
     		</TableViewRow>
     		
-    		 <TableViewRow id="list">
+    		<TableViewRow id="list">
     			<View class="promociones2">
     				<Label top="22px" left="22px">
     				<ImageView id="recetaImg"></ImageView>	
@@ -35,8 +35,8 @@
     	
 			<TableViewRow id="list">
 				<View id="preciosUnicos"> 
-						<Label id="preciosUnicosLabel">Precios Únicos</Label>	
-					</View>
+					<Label id="preciosUnicosLabel">Precios Únicos</Label>	
+				</View>
 			</TableViewRow>
 			
 			<TableViewRow id="list">
@@ -103,9 +103,7 @@
 					</View>					
 				</View>
 			</TableViewRow>
-			
-			
-			
+		
 			<TableViewRow id="list">
 				<View id="rowContainerSocial">
 					<Label font="Helvetica" fontWeight="bold"  size="6pt"  top="10" left="10" color="#f79323">Síguenos en</Label>
@@ -114,12 +112,8 @@
 					<ImageView id="youTubeImg"></ImageView>
 				</View>
 			</TableViewRow>
-
-
-    		
-						
+									
 		</TableView>
-			
 	
 	</View>
 </Alloy>

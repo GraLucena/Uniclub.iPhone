@@ -35,12 +35,6 @@
 	top:"131px",
 	separatorColor:"e4e4e4"
 },
-".productosList":{
-	width:Ti.UI.FILL,
-	backgroundColor :"#dddddd",
-	top:"131px",
-	separatorColor:"e4e4e4"
-},
 "#list":{
 	width:Ti.UI.FILL,
 	selectionStyle:"NONE"
@@ -49,11 +43,6 @@
 	width:Ti.UI.FILL,
 	height:"210px",
 	backgroundColor:"white"
-},
-"#productos":{
-	backgroundColor :"e4e4e4",
-	width:Ti.UI.FILL,
-	height : "215px"
 },
 "#categoria":{
 	width:Ti.UI.FILL,
