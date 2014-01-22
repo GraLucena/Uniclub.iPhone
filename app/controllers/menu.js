@@ -40,7 +40,6 @@ v1.add(sectionBorde);
 var sectionInicio = Ti.UI.createTableViewRow({
 	width : Ti.UI.FILL,
 	height : "43",
-	touchEnabled : false,
 	backgroundColor:"9c213f"
 });
 

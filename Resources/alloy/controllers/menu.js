@@ -45,7 +45,6 @@ function Controller() {
     var sectionInicio = Ti.UI.createTableViewRow({
         width: Ti.UI.FILL,
         height: "43",
-        touchEnabled: false,
         backgroundColor: "9c213f"
     });
     var inicioLabel = Ti.UI.createLabel({

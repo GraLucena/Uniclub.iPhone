@@ -101,6 +101,9 @@ function Controller() {
         sucursalView = fechaView = puntosGView = puntosRView = saldoView = null;
         return tableRow;
     }
+    function datePicker() {
+        $.inicioScreen.add(picker);
+    }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "transaccionesScreen";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
@@ -108,6 +111,7 @@ function Controller() {
     arguments[0] ? arguments[0]["__itemTemplate"] : null;
     var $ = this;
     var exports = {};
+    var __defers = {};
     $.__views.inicioScreen = Ti.UI.createView({
         backgroundColor: "#9C213F",
         height: "100%",
@@ -223,6 +227,7 @@ function Controller() {
         right: "75"
     });
     $.__views.categoria.add($.__views.calendarImg);
+    datePicker ? $.__views.calendarImg.addEventListener("click", datePicker) : __defers["$.__views.calendarImg!click!datePicker"] = true;
     $.__views.label = Ti.UI.createLabel({
         font: {
             font: "Helvetica",
@@ -343,6 +348,19 @@ function Controller() {
     tableData.push(createRow("Lomas", "dd/mm/aa", 650, 220, 5e3));
     $.myTable.setData(tableData);
     tableData = null;
+    var picker = Ti.UI.createPicker({
+        type: Ti.UI.PICKER_TYPE_DATE,
+        minDate: new Date(2009, 0, 1),
+        maxDate: new Date(2014, 11, 31),
+        value: new Date(2014, 3, 12),
+        top: 200
+    });
+    picker.addEventListener("change", function(e) {
+        Ti.API.info("User selected date: " + e.value.toLocaleString());
+        var win = Alloy.createController("transaccionesScreen").getView();
+        $.inicioScreen.add(win);
+    });
+    __defers["$.__views.calendarImg!click!datePicker"] && $.__views.calendarImg.addEventListener("click", datePicker);
     _.extend($, exports);
 }
 

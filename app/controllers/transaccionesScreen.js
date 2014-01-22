@@ -48,3 +48,22 @@ $.myTable.setData(tableData);
  
 // Resource Clean-Up
 tableData = null;
+
+var picker = Ti.UI.createPicker({
+  type:Ti.UI.PICKER_TYPE_DATE,
+  minDate:new Date(2009,0,1),
+  maxDate:new Date(2014,11,31),
+  value:new Date(2014,3,12),
+  top:200
+});
+
+function datePicker (){
+	$.inicioScreen.add(picker);
+}
+
+picker.addEventListener('change',function(e){
+  Ti.API.info("User selected date: " + e.value.toLocaleString());
+  var win = Alloy.createController('transaccionesScreen').getView();
+	$.inicioScreen.add(win);
+});
+

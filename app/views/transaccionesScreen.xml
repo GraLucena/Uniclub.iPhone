@@ -20,7 +20,7 @@
     				<Label id="label" right="170">Mes</Label>   		
     				<ImageView id="mesImg" right="150"></ImageView>	   	
     				<Label id="label" right="110">Desde</Label>   		
-    				<ImageView id="calendarImg" right="75"></ImageView>		
+    				<ImageView id="calendarImg" right="75" onClick="datePicker"></ImageView>		
     				<Label id="label" right="35">Hasta</Label>   	
     				<ImageView id="calendarImg" right="5"></ImageView>		
     			</View>	
