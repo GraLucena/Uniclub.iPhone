@@ -1,6 +1,6 @@
 function Controller() {
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
-    this.__controllerPath = "listaDeComprasScreen";
+    this.__controllerPath = "listaDeComprasScreen3";
     arguments[0] ? arguments[0]["__parentSymbol"] : null;
     arguments[0] ? arguments[0]["$model"] : null;
     arguments[0] ? arguments[0]["__itemTemplate"] : null;
@@ -51,8 +51,8 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    var __alloyId27 = [];
-    __alloyId27.push($.__views.list);
+    var __alloyId35 = [];
+    __alloyId35.push($.__views.list);
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
@@ -68,7 +68,7 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId27.push($.__views.list);
+    __alloyId35.push($.__views.list);
     $.__views.categoria = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "100px",
@@ -76,24 +76,24 @@ function Controller() {
         id: "categoria"
     });
     $.__views.list.add($.__views.categoria);
-    $.__views.__alloyId28 = Ti.UI.createLabel({
+    $.__views.__alloyId36 = Ti.UI.createLabel({
         text: "Descripción",
         font: "Helvetica",
         size: "5pt",
         color: "white",
         left: "50px",
-        id: "__alloyId28"
+        id: "__alloyId36"
     });
-    $.__views.categoria.add($.__views.__alloyId28);
-    $.__views.__alloyId29 = Ti.UI.createLabel({
+    $.__views.categoria.add($.__views.__alloyId36);
+    $.__views.__alloyId37 = Ti.UI.createLabel({
         text: "Precio",
         font: "Helvetica",
         size: "5pt",
         color: "white",
         right: "30px",
-        id: "__alloyId29"
+        id: "__alloyId37"
     });
-    $.__views.categoria.add($.__views.__alloyId29);
+    $.__views.categoria.add($.__views.__alloyId37);
     $.__views.label = Ti.UI.createLabel({
         left: "50px",
         top: "70px",
@@ -115,7 +115,7 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId27.push($.__views.list);
+    __alloyId35.push($.__views.list);
     $.__views.productos = Ti.UI.createView({
         backgroundColor: "white",
         width: Ti.UI.FILL,
@@ -165,7 +165,57 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId27.push($.__views.list);
+    __alloyId35.push($.__views.list);
+    $.__views.productos = Ti.UI.createView({
+        backgroundColor: "white",
+        width: Ti.UI.FILL,
+        height: "180px",
+        id: "productos"
+    });
+    $.__views.list.add($.__views.productos);
+    $.__views.productoImg3 = Ti.UI.createImageView({
+        image: "/productoImg2.png",
+        left: "0px",
+        id: "productoImg3"
+    });
+    $.__views.productos.add($.__views.productoImg3);
+    $.__views.productoInfo3 = Ti.UI.createLabel({
+        font: {
+            font: "Helvetica",
+            fontSize: "13pt"
+        },
+        left: "180px",
+        top: "30",
+        color: "#555454",
+        text: "Galleta Chocolate \nCosta 140 (gr)",
+        id: "productoInfo3"
+    });
+    $.__views.productos.add($.__views.productoInfo3);
+    $.__views.productoPrecio3 = Ti.UI.createLabel({
+        font: {
+            font: "Helvetica",
+            fontSize: "13pt"
+        },
+        right: "30px",
+        top: "30",
+        color: "black",
+        text: "BsF. 18,70",
+        id: "productoPrecio3"
+    });
+    $.__views.productos.add($.__views.productoPrecio3);
+    $.__views.eliminarBtn = Ti.UI.createImageView({
+        image: "/eliminarBtn.png",
+        top: "50",
+        right: "30px",
+        id: "eliminarBtn"
+    });
+    $.__views.productos.add($.__views.eliminarBtn);
+    $.__views.list = Ti.UI.createTableViewRow({
+        width: Ti.UI.FILL,
+        selectionStyle: "NONE",
+        id: "list"
+    });
+    __alloyId35.push($.__views.list);
     $.__views.resumenLista = Ti.UI.createView({
         backgroundColor: "white",
         top: "10",
@@ -189,7 +239,7 @@ function Controller() {
             font: "Helvetica",
             fontSize: "15pt"
         },
-        text: "Seleccionado (1)",
+        text: "Seleccionado (2)",
         id: "selecionadoLabel"
     });
     $.__views.resumenLista.add($.__views.selecionadoLabel);
@@ -200,20 +250,20 @@ function Controller() {
             font: "Helvetica",
             fontSize: "15pt"
         },
-        text: "Est. Total: Bs.F 96,90",
+        text: "Est. Total: Bs.F 115,30",
         id: "estimadoLabel"
     });
     $.__views.resumenLista.add($.__views.estimadoLabel);
-    $.__views.__alloyId26 = Ti.UI.createTableView({
+    $.__views.__alloyId34 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "#dddddd",
         separatorStyle: "NONE",
         top: "131px",
         separatorColor: "e4e4e4",
-        data: __alloyId27,
-        id: "__alloyId26"
+        data: __alloyId35,
+        id: "__alloyId34"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId26);
+    $.__views.inicioScreen.add($.__views.__alloyId34);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {

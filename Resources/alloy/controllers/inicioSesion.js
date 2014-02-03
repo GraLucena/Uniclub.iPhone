@@ -30,7 +30,7 @@ function Controller() {
     });
     $.__views.__alloyId22.add($.__views.uniclubImg);
     inicie ? $.__views.uniclubImg.addEventListener("click", inicie) : __defers["$.__views.uniclubImg!click!inicie"] = true;
-    $.__views.__alloyId23 = Ti.UI.createTextArea({
+    $.__views.__alloyId23 = Ti.UI.createTextField({
         backgroundColor: "white",
         width: "518px",
         height: "0.5cm",
@@ -40,13 +40,14 @@ function Controller() {
         id: "__alloyId23"
     });
     $.__views.__alloyId22.add($.__views.__alloyId23);
-    $.__views.__alloyId24 = Ti.UI.createTextArea({
+    $.__views.__alloyId24 = Ti.UI.createTextField({
         backgroundColor: "white",
         width: "518px",
         height: "0.5cm",
         borderRadius: "3cm",
         top: "277",
         hintText: "Contraseña",
+        passwordMask: "true",
         id: "__alloyId24"
     });
     $.__views.__alloyId22.add($.__views.__alloyId24);

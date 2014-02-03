@@ -23,17 +23,37 @@
     			</View>	
     		</TableViewRow>
     		  
-    	
-    		<TableViewRow id="list">
+    		 
+    		 <TableViewRow id="list">
 				<View id="productos">
 					<ImageView id="productoImg2"></ImageView>
 					<Label id="productoInfo2"></Label>		
 					<Label id="productoPrecio2"></Label>
+					<ImageView id="eliminarBtn" ></ImageView>
+				</View>
+    		</TableViewRow>
+    		 
+    		
+    			
+    		
+    			
+    		<TableViewRow id="list">
+				<View id="productos">
+					<ImageView id="productoImg3"></ImageView>
+					<Label id="productoInfo3"></Label>		
+					<Label id="productoPrecio3"></Label>
 					<ImageView id="eliminarBtn"></ImageView>
 				</View>
     		</TableViewRow>
-    			
     		
+    		<TableViewRow id="list">
+				<View id="productos">
+					<ImageView id="productoImg1"></ImageView>
+					<Label id="productoInfo1"></Label>		
+					<Label id="productoPrecio1"></Label>
+					<ImageView id="eliminarBtn" onClick="eliminarProducto"></ImageView>
+				</View>
+    		</TableViewRow>
     			
     		<TableViewRow id="list">
 				<View id="resumenLista">

@@ -157,8 +157,8 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    var __alloyId57 = [];
-    __alloyId57.push($.__views.list);
+    var __alloyId69 = [];
+    __alloyId69.push($.__views.list);
     $.__views.search = Ti.UI.createSearchBar({
         id: "search",
         barColor: "#e4e4e4",
@@ -174,7 +174,7 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId57.push($.__views.list);
+    __alloyId69.push($.__views.list);
     $.__views.categoria = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "100px",
@@ -250,7 +250,7 @@ function Controller() {
         selectionStyle: "NONE",
         id: "list"
     });
-    __alloyId57.push($.__views.list);
+    __alloyId69.push($.__views.list);
     $.__views.columnas = Ti.UI.createView({
         width: Ti.UI.FILL,
         height: "100px",
@@ -318,24 +318,24 @@ function Controller() {
         id: "saldo"
     });
     $.__views.columnas.add($.__views.saldo);
-    $.__views.__alloyId56 = Ti.UI.createTableView({
+    $.__views.__alloyId68 = Ti.UI.createTableView({
         width: Ti.UI.FILL,
         backgroundColor: "#dddddd",
         top: "131px",
         separatorColor: "e4e4e4",
-        data: __alloyId57,
-        id: "__alloyId56"
+        data: __alloyId69,
+        id: "__alloyId68"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId56);
-    $.__views.__alloyId58 = Ti.UI.createView({
+    $.__views.inicioScreen.add($.__views.__alloyId68);
+    $.__views.__alloyId70 = Ti.UI.createView({
         top: "210",
-        id: "__alloyId58"
+        id: "__alloyId70"
     });
-    $.__views.inicioScreen.add($.__views.__alloyId58);
+    $.__views.inicioScreen.add($.__views.__alloyId70);
     $.__views.myTable = Ti.UI.createTableView({
         id: "myTable"
     });
-    $.__views.__alloyId58.add($.__views.myTable);
+    $.__views.__alloyId70.add($.__views.myTable);
     exports.destroy = function() {};
     _.extend($, $.__views);
     $.menuBtn.addEventListener("click", function() {

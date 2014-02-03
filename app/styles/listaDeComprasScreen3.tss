@@ -165,7 +165,7 @@
 		fontSize:"15pt",
 
 	},
-	text:"Seleccionado (1)"
+	text:"Seleccionado (2)"
 },
 "#estimadoLabel":{
 	color:"9c213f",
@@ -175,5 +175,5 @@
 		fontSize:"15pt",
 
 	},
-	text:"Est. Total: Bs.F 96,90"
+	text:"Est. Total: Bs.F 115,30"
 }

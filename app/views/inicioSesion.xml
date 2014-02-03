@@ -2,8 +2,8 @@
 	<Window class="container">
 		<View>
 			<ImageView id="uniclubImg" onClick="inicie"></ImageView>
-			<TextArea class="TextoUsuario" hintText="Cédula"></TextArea>
-			<TextArea class="TextoClave" hintText="Contraseña"></TextArea>
+			<TextField class="TextoUsuario" hintText="Cédula"></TextField>
+			<TextField class="TextoClave" hintText="Contraseña" passwordMask="true" ></TextField>
 			<Label class="LabelOlvido">Olvidó Su Contraseña?</Label>
 			<ImageView id="inicioSesionImg" onClick="inicie"></ImageView>		
 		</View>

@@ -23,7 +23,7 @@
     			</View>	
     		</TableViewRow>
     		  
-    	
+    		
     		<TableViewRow id="list">
 				<View id="productos">
 					<ImageView id="productoImg2"></ImageView>
@@ -33,7 +33,14 @@
 				</View>
     		</TableViewRow>
     			
-    		
+    		<TableViewRow id="list">
+				<View id="productos">
+					<ImageView id="productoImg3"></ImageView>
+					<Label id="productoInfo3"></Label>		
+					<Label id="productoPrecio3"></Label>
+					<ImageView id="eliminarBtn"  onClick="eliminarProducto"></ImageView>
+				</View>
+    		</TableViewRow>
     			
     		<TableViewRow id="list">
 				<View id="resumenLista">
